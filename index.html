@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pizza Patrón Tezel/Culebra Road - Award-winning Latin-centric pizzeria in San Antonio, TX. Delicious handmade pizzas, fast-food format, open until 11 PM.">
+    <meta name="keywords" content="pizza, San Antonio, Culebra Road, Pizza Patrón, Latin pizza, fast food pizza, pizza delivery, pizza pickup">
+    <meta name="author" content="Pizza Patrón">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Pizza Patrón - Tezel/Culebra Road, San Antonio">
+    <meta property="og:description" content="Award-winning Latin-centric pizzeria. Delicious pizza with simple toppings in a fast-food format.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=1200&h=630&fit=crop">
+    <meta property="og:url" content="https://pizzapatron-tezel.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#D32F2F">
+    <title>Pizza Patrón - Tezel/Culebra Road | San Antonio's Best Pizza</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍕</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-emoji">🍕</span>
+                <span class="logo-text">Pizza Patrón</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Authentic Latin-Centric Pizza</h1>
+            <p>Award-Winning Pizzeria on Culebra Road, San Antonio</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="orderNow()">Order Now</button>
+                <button class="btn btn-secondary" onclick="getDirections()">Get Directions</button>
+            </div>
+            <div class="rating-badge">
+                <span class="stars">⭐⭐⭐⭐</span>
+                <span class="rating-text">4.0/5 (42 Reviews)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info -->
+    <section class="quick-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <span class="info-icon">📍</span>
+                    <h3>Location</h3>
+                    <p>9355 Culebra Rd #103<br>San Antonio, TX 78251</p>
+                </div>
+                <div class="info-card">
+                    <span class="info-icon">⏰</span>
+                    <h3>Hours</h3>
+                    <p>Open Daily<br>Closes 11 PM</p>
+                </div>
+                <div class="info-card">
+                    <span class="info-icon">📞</span>
+                    <h3>Call Us</h3>
+                    <p><a href="tel:2109032113">(210) 903-2113</a></p>
+                </div>
+                <div class="info-card">
+                    <span class="info-icon">💵</span>
+                    <h3>Price Range</h3>
+                    <p>$10–20 per person</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Menu -->
+    <section id="menu" class="featured-menu">
+        <div class="container">
+            <h2>Featured Menu Items</h2>
+            <p class="section-subtitle">Try our most popular pizzas loved by our customers</p>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1584599810694-b3fb3e670db?w=400&h=300&fit=crop" alt="Hawaiian Pizza">
+                    </div>
+                    <h3>Hawaiian Pizza</h3>
+                    <p>Pineapple, ham, cheese blend</p>
+                    <span class="price">From $12</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1628840042765-356cda07f4ee?w=400&h=300&fit=crop" alt="Lemon Pepper Pizza">
+                    </div>
+                    <h3>Lemon Pepper</h3>
+                    <p>Zesty citrus & fresh cracked pepper</p>
+                    <span class="price">From $11</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1593614905535-d89bb4d83279?w=400&h=300&fit=crop" alt="Peppers Pizza">
+                    </div>
+                    <h3>Peppers Delight</h3>
+                    <p>Bell peppers, onions, garlic</p>
+                    <span class="price">From $10</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=300&fit=crop" alt="Classic Pepperoni">
+                    </div>
+                    <h3>Classic Pepperoni</h3>
+                    <p>Traditional favorite with premium pepperoni</p>
+                    <span class="price">From $12</span>
+                </div>
+            </div>
+            <div class="menu-cta">
+                <a href="https://order.pizzapatron.com" class="btn btn-primary" target="_blank">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Pizza Patrón</h2>
+                    <p>Pizza Patrón is a Latin-centric pizzeria bringing authentic flavors and quality ingredients to San Antonio. Our Tezel/Culebra Road location combines traditional pizza-making techniques with fast-food convenience.</p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <h4>✓ Quality Ingredients</h4>
+                            <p>Fresh toppings and premium cheese in every pizza</p>
+                        </div>
+                        <div class="highlight">
+                            <h4>✓ Fast Service</h4>
+                            <p>Orders ready on time, even during peak hours</p>
+                        </div>
+                        <div class="highlight">
+                            <h4>✓ Friendly Staff</h4>
+                            <p>Exceptional customer service that keeps guests coming back</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1579751626658-0e50efd136bd?w=500&h=500&fit=crop" alt="Pizza Patrón Restaurant">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2>What Customers Say</h2>
+            <p class="section-subtitle">Real reviews from real customers</p>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"I haven't had Pizza Patron in years, and I don't remember it being this good. My pizzas were ready on time despite it being busy during New Year's day."</p>
+                    <span class="reviewer">- Sarah M.</span>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Absolutely love this place!!! The pizza is very delicious and the workers are the best! My orders have always been on time and accurate!"</p>
+                    <span class="reviewer">- Michael T.</span>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐</div>
+                    <p>"Super hyped for this location to open, pizza patron is bomb. Great location on Culebra Road with friendly staff and amazing pizza."</p>
+                    <span class="reviewer">- Jessica R.</span>
+                </div>
+            </div>
+            <div class="reviews-cta">
+                <p>Read more reviews on Google</p>
+                <a href="https://www.google.com/maps/search/Pizza+Patron+Tezel+Culebra" class="btn btn-secondary" target="_blank">View on Google Maps</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📍 Address</h3>
+                        <p>9355 Culebra Rd #103<br>San Antonio, TX 78251</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📞 Phone</h3>
+                        <p><a href="tel:2109032113">(210) 903-2113</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>🕐 Hours</h3>
+                        <p>Open Daily<br>Closes 11 PM</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>💻 Online Ordering</h3>
+                        <p><a href="https://order.pizzapatron.com" target="_blank">order.pizzapatron.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Pizza Patrón</h4>
+                    <p>Authentic Latin-centric pizzeria serving San Antonio since opening</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pizza Patrón Tezel/Culebra Road. All rights reserved.</p>
+                <p>San Antonio, TX 78251 | (210) 903-2113</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
